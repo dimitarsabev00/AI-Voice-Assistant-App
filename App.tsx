@@ -1,22 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import AppNavigation from "./navigation";
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>AI Voice Assistant App</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <AppNavigation />;
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
 
 export default App;
